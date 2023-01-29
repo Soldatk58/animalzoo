@@ -6,8 +6,8 @@ import pandas as pd
 import urllib.request
 
 def main():
-    urllib.request.urlretrieve(‘https://github.com/Soldatk58/animalzoo/blob/main/icon.png?raw=true’, “foto1”) # Иконка сайта
-    icon = Image.open('foto1')
+    urllib.request.urlretrieve(‘https://github.com/Soldatk58/animalzoo/blob/main/icon.png?raw=true’, “foto1.png”) # Иконка сайта
+    icon = Image.open('foto1.png')
     st.set_page_config(
         page_title='Animal Predict', # Название страницы
         page_icon=icon, # Иконка сайта
@@ -19,8 +19,8 @@ def main():
     st.write("""
     Прогнозируем по введенным данным, животное из зоопарка
      """)
-    urllib.request.urlretrieve(‘https://github.com/Soldatk58/animalzoo/blob/main/zoo1.png?raw=true’, “foto2”)
-    image = Image.open('foto2')
+    urllib.request.urlretrieve(‘https://github.com/Soldatk58/animalzoo/blob/main/zoo1.png?raw=true’, “foto2.png”)
+    image = Image.open('foto2.png')
     st.image(image)
     st.sidebar.header('Заданные пользователем параметры')
     hair = st.sidebar.number_input('Есть ли волосы у животного (1 - да, 2 - нет)')
