@@ -2,4 +2,4 @@ streamlit
 requests
 json
 pandas
-Image
+from PIL import Image
