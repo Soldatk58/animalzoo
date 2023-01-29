@@ -1,4 +1,4 @@
 streamlit
 pandas
 requests
-json==1.0.0
+json5
