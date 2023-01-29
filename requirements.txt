@@ -1,4 +1,4 @@
 streamlit
 pandas
 requests
-json2json
+json==1.0.0
