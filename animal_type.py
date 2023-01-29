@@ -3,11 +3,9 @@ import requests
 import json
 from PIL import Image
 import pandas as pd
-import urllib.request
 
 def main():
-    urllib.request.urlretrieve(‘https://img.1tv.com/img/2020-03-02/fmt_96_24_shutterstock_1224903712_2.jpg’, “foto1.jpg”) # Иконка сайта
-    icon = Image.open('foto1.jpg')
+    icon = Image.open('icon.png') # Иконка сайта
     st.set_page_config(
         page_title='Animal Predict', # Название страницы
         page_icon=icon, # Иконка сайта
@@ -19,9 +17,8 @@ def main():
     st.write("""
     Прогнозируем по введенным данным, животное из зоопарка
      """)
-    #urllib.request.urlretrieve(‘https://github.com/Soldatk58/animalzoo/blob/main/zoo1.png?raw=true’, “foto2.png”)
-    #image = Image.open('foto2.png')
-    #st.image(image)
+    image = Image.open('zoo1.png')
+    st.image(image)
     st.sidebar.header('Заданные пользователем параметры')
     hair = st.sidebar.number_input('Есть ли волосы у животного (1 - да, 2 - нет)')
     feathers = st.sidebar.number_input('Есть ли перья у животного (1 - да, 2 - нет)')
