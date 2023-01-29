@@ -1,14 +1,14 @@
 import streamlit as st
 import requests
 import json
-#from PIL import Image
+from PIL import Image
 import pandas as pd
 
 def main():
-    #icon = Image.open('C:/Users/GIGABYTE/animalpredictor/ui/icon.png') # Иконка сайта
+    icon = Image.open('C:/Users/GIGABYTE/animalpredictor/ui/icon.png') # Иконка сайта
     st.set_page_config(
         page_title='Animal Predict', # Название страницы
-        #page_icon=icon, # Иконка сайта
+        page_icon=icon, # Иконка сайта
         layout='wide',
     )
     st.write("""
@@ -17,8 +17,8 @@ def main():
     st.write("""
     Прогнозируем по введенным данным, животное из зоопарка
      """)
-    #image = Image.open('C:/Users/GIGABYTE/animalpredictor/ui/zoo1.png')
-    #st.image(image)
+    image = Image.open('C:/Users/GIGABYTE/animalpredictor/ui/zoo1.png')
+    st.image(image)
     st.sidebar.header('Заданные пользователем параметры')
     hair = st.sidebar.number_input('Есть ли волосы у животного (1 - да, 2 - нет)')
     feathers = st.sidebar.number_input('Есть ли перья у животного (1 - да, 2 - нет)')
